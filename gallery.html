@@ -52,6 +52,21 @@
 
   main{max-width:1120px;margin:0 auto;padding:64px 24px 100px;}
 
+
+  .feature-card{
+    display:flex;align-items:center;gap:22px;
+    background:var(--turf-900);color:var(--cream);
+    border-radius:2px;padding:26px 28px;margin-bottom:36px;position:relative;
+    transition:transform .15s ease;
+  }
+  .feature-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--red);border-radius:2px 0 0 2px;}
+  .feature-card:hover{transform:translateY(-2px);}
+  .feature-tag{font-family:var(--f-mono);font-size:11px;letter-spacing:.2em;color:#9FD3AC;text-transform:uppercase;}
+  .feature-card h2{font-family:var(--f-serif);font-weight:800;font-size:26px;letter-spacing:.05em;margin:4px 0 6px;}
+  .feature-card p{font-family:var(--f-display);font-size:13.5px;color:#D9CFAE;}
+  .feature-body{flex:1;min-width:0;}
+  .feature-arrow{font-family:var(--f-mono);font-size:22px;color:#F2C216;flex-shrink:0;}
+
   .filter-note{
     font-family:var(--f-mono);font-size:12px;color:var(--brown-700);
     letter-spacing:.03em;margin-bottom:36px;padding:14px 18px;
@@ -145,6 +160,15 @@
 </section>
 
 <main>
+  <a class="feature-card" href="report1.html">
+    <div class="feature-body">
+      <span class="feature-tag">Special — Dictionary</span>
+      <h2>馬の辞典</h2>
+      <p>毛色の種類と名馬たちを調べて学べる、勉強用の辞典。</p>
+    </div>
+    <span class="feature-arrow">→</span>
+  </a>
+
   <p class="filter-note">※ 現在はプレースホルダーです。実際の写真やメモ画像に差し替えて使ってください。</p>
 
   <div class="gallery-grid">
